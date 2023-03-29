@@ -1,0 +1,15 @@
+/Users/SU20380276/Documents/visual studio/ControlTemplates/ControlTemplates/ControlTemplates/bin/Debug/netstandard2.0/ControlTemplates.deps.json
+/Users/SU20380276/Documents/visual studio/ControlTemplates/ControlTemplates/ControlTemplates/bin/Debug/netstandard2.0/ControlTemplates.dll
+/Users/SU20380276/Documents/visual studio/ControlTemplates/ControlTemplates/ControlTemplates/bin/Debug/netstandard2.0/ref/ControlTemplates.dll
+/Users/SU20380276/Documents/visual studio/ControlTemplates/ControlTemplates/ControlTemplates/bin/Debug/netstandard2.0/ControlTemplates.pdb
+/Users/SU20380276/Documents/visual studio/ControlTemplates/ControlTemplates/ControlTemplates/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/SU20380276/Documents/visual studio/ControlTemplates/ControlTemplates/ControlTemplates/obj/Debug/netstandard2.0/View/CardPage.xaml.g.cs
+/Users/SU20380276/Documents/visual studio/ControlTemplates/ControlTemplates/ControlTemplates/obj/Debug/netstandard2.0/View/MainPage.xaml.g.cs
+/Users/SU20380276/Documents/visual studio/ControlTemplates/ControlTemplates/ControlTemplates/obj/Debug/netstandard2.0/ControlTemplates.AssemblyInfoInputs.cache
+/Users/SU20380276/Documents/visual studio/ControlTemplates/ControlTemplates/ControlTemplates/obj/Debug/netstandard2.0/ControlTemplates.AssemblyInfo.cs
+/Users/SU20380276/Documents/visual studio/ControlTemplates/ControlTemplates/ControlTemplates/obj/Debug/netstandard2.0/ControlTemplates.csproj.CoreCompileInputs.cache
+/Users/SU20380276/Documents/visual studio/ControlTemplates/ControlTemplates/ControlTemplates/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/SU20380276/Documents/visual studio/ControlTemplates/ControlTemplates/ControlTemplates/obj/Debug/netstandard2.0/ControlTemplates.dll
+/Users/SU20380276/Documents/visual studio/ControlTemplates/ControlTemplates/ControlTemplates/obj/Debug/netstandard2.0/ref/ControlTemplates.dll
+/Users/SU20380276/Documents/visual studio/ControlTemplates/ControlTemplates/ControlTemplates/obj/Debug/netstandard2.0/ControlTemplates.pdb
+/Users/SU20380276/Documents/visual studio/ControlTemplates/ControlTemplates/ControlTemplates/obj/Debug/netstandard2.0/ControlTemplates.csproj.AssemblyReference.cache

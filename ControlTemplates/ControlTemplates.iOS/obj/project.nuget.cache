@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "uZf6TDoFftpcBE27R8jUedeKUKPjrXD94i4sV7mjcl9AldNS5TA82i7sTBQG22rI29EdoWQQJTTxl1ElljtsbQ==",
+  "success": true,
+  "projectFilePath": "/Users/SU20380276/Documents/visual studio/ControlTemplates/ControlTemplates/ControlTemplates.iOS/ControlTemplates.iOS.csproj",
+  "expectedPackageFiles": [
+    "/Users/SU20380276/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/SU20380276/.nuget/packages/xamarin.essentials/1.7.5/xamarin.essentials.1.7.5.nupkg.sha512",
+    "/Users/SU20380276/.nuget/packages/xamarin.forms/5.0.0.2578/xamarin.forms.5.0.0.2578.nupkg.sha512"
+  ],
+  "logs": []
+}

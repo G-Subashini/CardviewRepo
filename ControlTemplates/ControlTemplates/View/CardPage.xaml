@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:ControlTemplates.View.Controls"
+    x:DataType="controls:CardView"
+    x:Class="ControlTemplates.View.CardPage"
+    BackgroundColor="#efefef"
+    Title="Order Page">
+    <ContentPage.Resources>
+      <ControlTemplate x:Key="CardViewControlTemplate3">
+          <Frame BindingContext="{Binding Source={RelativeSource TemplatedParent}}"
+                 BackgroundColor="{Binding CardColor}"
+                 BorderColor="{Binding BorderColor}"
+                 CornerRadius="5"
+                 HasShadow="False"
+                 Padding="10"
+                 >
+              <Grid>
+                  <Grid.RowDefinitions>
+                      <RowDefinition Height="40" />
+                      <RowDefinition Height="Auto" />
+                  </Grid.RowDefinitions>
+                  <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="*" />
+                      <ColumnDefinition Width="2*" />
+                  </Grid.ColumnDefinitions>
+                  <Label Text="{Binding CardTitle}"
+                         FontAttributes="Bold"
+                         FontSize="Large"
+                         VerticalTextAlignment="Start"
+                         HorizontalTextAlignment="Start"
+                         Grid.ColumnSpan="2"/>
+                  <!--Label Grid.Row="1"
+                         Text="{Binding CardDescription}"
+                         VerticalTextAlignment="Start"
+                         VerticalOptions="Fill"
+                         HorizontalOptions="Fill" /!-->
+                  <RadioButton Content="yes" Grid.Row="1" BackgroundColor="Yellow"/>
+                  <RadioButton Content="No" Grid.Row="1" Grid.Column="1" BackgroundColor="Yellow"/>
+              </Grid>
+          </Frame>
+      </ControlTemplate>
+        <ControlTemplate x:Key="CardViewControlTemplate2">
+          <Frame BindingContext="{Binding Source={RelativeSource TemplatedParent}}"
+                 BackgroundColor="{Binding CardColor}"
+                 BorderColor="{Binding BorderColor}"
+                 CornerRadius="5"
+                 HasShadow="False"
+                 Padding="10"
+                 >
+              <Grid>
+                  <Grid.RowDefinitions>
+                      <RowDefinition Height="auto" />
+                      <RowDefinition Height="Auto" />
+                      <RowDefinition Height="auto" />
+                  </Grid.RowDefinitions>
+                  <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="auto" />
+                      <ColumnDefinition Width="2*" />
+                       <ColumnDefinition Width="*" />
+                      <ColumnDefinition Width="2*" />
+                  </Grid.ColumnDefinitions>
+                  <Label Text="{Binding CardTitle}"
+                         FontAttributes="Bold"
+                         FontSize="Large"
+                         Grid.ColumnSpan="4"
+                         VerticalTextAlignment="Start"
+                         HorizontalTextAlignment="Start" />
+                  <!--Label Grid.Row="1"
+                         Text="{Binding CardDescription}"
+                         VerticalTextAlignment="Start"
+                         VerticalOptions="Fill"
+                         HorizontalOptions="Fill" /!-->
+                  
+                  <CheckBox Grid.Row="1"
+                            Grid.Column="0"
+                            Color="SkyBlue"/>
+                  <Label Text="Cash on Delivery" Grid.Row="1" Grid.Column="1" Margin="0,5"/>
+                  <CheckBox
+                            Grid.Row="1"
+                      Grid.Column="2"
+                            x:Name="Agree"
+                            Color="SkyBlue"/>
+                  <Label Text="Paytm" Grid.Row="1" Grid.Column="3" Margin="0,10"/>
+                  <CheckBox Grid.Row="2"
+                            Grid.Column="0"
+                            Color="SkyBlue"/>
+                  <Label Text="Gpay" Grid.Row="2" Grid.Column="1" Margin="0,20"/>
+                  <CheckBox
+                            Grid.Row="2"
+                      Grid.Column="2"
+                            Color="SkyBlue"/>
+                  <Label Text="Others" Grid.Row="2" Grid.Column="3" Margin="0,20"/>
+              </Grid>
+          </Frame>
+      </ControlTemplate>
+         <ControlTemplate x:Key="CardViewControlTemplate1">
+          <Frame BindingContext="{Binding Source={RelativeSource TemplatedParent}}"
+                 BackgroundColor="{Binding CardColor}"
+                 BorderColor="{Binding BorderColor}"
+                 CornerRadius="5"
+                 HasShadow="False"
+                 Padding="10"
+                 >
+              <Grid>
+                  <Grid.RowDefinitions>
+                      <RowDefinition Height="40" />
+                      <RowDefinition Height="Auto" />
+                  </Grid.RowDefinitions>
+                  <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="*" />
+                      
+                  </Grid.ColumnDefinitions>
+                  <Label Text="{Binding CardTitle}"
+                         FontAttributes="Bold"
+                         FontSize="Large"
+                         VerticalTextAlignment="Start"
+                         />
+                 <Entry Placeholder="Customer Id" Grid.Row="1"
+                        PlaceholderColor="White" BackgroundColor="SkyBlue"/>
+                 
+              </Grid>
+          </Frame>
+      </ControlTemplate>
+       <ControlTemplate x:Key="CardViewControlTemplate4">
+          <Frame BindingContext="{Binding Source={RelativeSource TemplatedParent}}"
+                 BackgroundColor="{Binding CardColor}"
+                 BorderColor="{Binding BorderColor}"
+                 CornerRadius="5"
+                 HasShadow="False"
+                 Padding="10"
+                 >
+              <Grid>
+                  <Grid.RowDefinitions>
+                      <RowDefinition Height="40" />
+                      <RowDefinition Height="Auto" />
+                  </Grid.RowDefinitions>
+                  <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="*" />
+                      
+                  </Grid.ColumnDefinitions>
+                  <Label Text="{Binding CardTitle}"
+                         FontAttributes="Bold"
+                         FontSize="Large"
+                         VerticalTextAlignment="Start"/>
+                 <TimePicker Grid.Row="1" BackgroundColor="SkyBlue" TextColor="White"/>
+              </Grid>
+          </Frame>
+      </ControlTemplate>
+       
+    </ContentPage.Resources>
+    <ScrollView>
+    <StackLayout Margin="30">
+        <Frame>
+            <StackLayout>
+            <Label HorizontalOptions="Center" TextColor="CadetBlue" FontAttributes="Bold" FontSize="Large">Alim Restaurant</Label>
+                
+            <Label HorizontalOptions="CenterAndExpand">Place your order by filling this form</Label>
+                </StackLayout>
+        </Frame>
+        <controls:CardView BorderColor="DarkGray"
+                           CardTitle="Enter your Customer Id"
+                           CardDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elit dolor, convallis non interdum."
+                           IconBackgroundColor="SlateGray"
+                           IconImageSource="user.png"
+                           ControlTemplate="{StaticResource CardViewControlTemplate1}" />
+        <controls:CardView BorderColor="DarkGray"
+                           CardTitle="Select Payment Method"
+                           CardDescription="Phasellus eu convallis mi. In tempus augue eu dignissim fermentum. Morbi ut lacus vitae eros lacinia."
+                           IconBackgroundColor="SlateGray"
+                           IconImageSource="user.png"
+                           ControlTemplate="{StaticResource CardViewControlTemplate2}" />
+        <controls:CardView BorderColor="DarkGray"
+                           CardTitle="Is this your first order?"
+                           CardDescription="Aliquam sagittis, odio lacinia fermentum dictum, mi erat scelerisque erat, quis aliquet arcu."
+                           IconBackgroundColor="SlateGray"
+                           IconImageSource="user.png"
+                           ControlTemplate="{StaticResource CardViewControlTemplate3}" />
+        <controls:CardView BorderColor="DarkGray"
+                           CardTitle="Are you satisfied with our service?"
+                           CardDescription="Aliquam sagittis, odio lacinia fermentum dictum, mi erat scelerisque erat, quis aliquet arcu."
+                           IconBackgroundColor="SlateGray"
+                           IconImageSource="user.png"
+                           ControlTemplate="{StaticResource CardViewControlTemplate3}" />
+        <controls:CardView BorderColor="DarkGray"
+                           CardTitle="Preferred time to deliver order"
+                           CardDescription="Aliquam sagittis, odio lacinia fermentum dictum, mi erat scelerisque erat, quis aliquet arcu."
+                           IconBackgroundColor="SlateGray"
+                           IconImageSource="user.png"
+                           ControlTemplate="{StaticResource CardViewControlTemplate4}" />
+        <Button BackgroundColor="SkyBlue" HorizontalOptions="Center" Text="Search Order" Padding="10" TextColor="Black" FontAttributes="Bold"/>
+    </StackLayout>
+        </ScrollView>
+</ContentPage>
+
